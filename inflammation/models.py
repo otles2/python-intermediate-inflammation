@@ -77,6 +77,15 @@ def daily_above_threshold(patient_num, data, threshold):
     return reduce(count_above_threshold, above_threshold, 0)
 
 
+class Observation:
+    def __init__(self, day, value):
+        self.day = day
+        self.value = value
+
+    def __str__(self):
+        return self.value
+
+
 class Person:
     """A person."""
 

@@ -1,14 +1,23 @@
 """Module containing code for plotting inflammation data."""
 
 from matplotlib import pyplot as plt
-#import numpy as np
+
+
+# import numpy as np
+
+
+def display_patient_record(patient):
+    """Display data for a single patient."""
+    print(patient.name)
+    for obs in patient.observations:
+        print(obs.day, obs.value)
 
 
 def visualize(data_dict):
     """Display plots of basic statistical properties of the inflammation data.
     :param data_dict: Dictionary of name -> data to plot
     """
-    #(lesson-design) Extend to allow saving figure to file
+    # (lesson-design) Extend to allow saving figure to file
     num_plots = len(data_dict)
     fig = plt.figure(figsize=((3 * num_plots) + 1, 3.0))
 
