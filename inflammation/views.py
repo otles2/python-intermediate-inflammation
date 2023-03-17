@@ -13,6 +13,7 @@ def display_patient_record(patient):
         print(obs.day, obs.value)
 
 
+
 def visualize(data_dict):
     """Display plots of basic statistical properties of the inflammation data.
     :param data_dict: Dictionary of name -> data to plot
